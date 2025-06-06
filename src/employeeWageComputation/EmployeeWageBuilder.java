@@ -57,4 +57,18 @@ public class EmployeeWageBuilder {
         int empHours = getWorkingHours();
         System.out.println("Wage: ₹" + (empHours * wagePerHour));
     }
+    
+    public void calculateMonthlyWage() {
+        int wagePerHour = 20;
+        int totalWage = 0;
+        int totalDays = 20;
+
+        for (int day = 1; day <= totalDays; day++) {
+            int empHours = getWorkingHours();
+            int dailyWage = empHours * wagePerHour;
+            totalWage += dailyWage;
+        }
+        System.out.println("Total Monthly Wage: ₹" + totalWage);
+    }
+
 }

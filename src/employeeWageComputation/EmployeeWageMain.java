@@ -13,6 +13,9 @@ public class EmployeeWageMain {
 	        emp.calculatePartTimeWage();
 	        
 	        System.out.println("\nUC4: Wage Calculation using Switch Case");
-	        empWage.calculateWageUsingSwitch();
+	        emp.calculateWageUsingSwitch();
+	        
+	        System.out.println("\nUC5: Monthly Wage for 20 Days");
+	        emp.calculateMonthlyWage();
 	 }
 }
