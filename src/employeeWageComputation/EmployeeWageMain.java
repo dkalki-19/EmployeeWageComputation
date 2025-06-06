@@ -5,5 +5,8 @@ public class EmployeeWageMain {
 	        System.out.println("Welcome to Employee Wage Computation Program");
 	        EmployeeWageBuilder emp = new EmployeeWageBuilder();
 	        emp.checkAttendance();
+	        
+	        System.out.println("\nUC2: Calculate Daily Wage");
+	        emp.calculateDailyWage();
 	 }
 }

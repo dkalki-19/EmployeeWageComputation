@@ -12,4 +12,18 @@ public class EmployeeWageBuilder {
             System.out.println("Employee is Absent");
         }
     }
+	
+	public void calculateDailyWage() {
+        int wagePerHour = 20;
+        int fullDayHours = 8;
+        int isPresent = 1;
+        int empCheck = new Random().nextInt(2);
+        if (empCheck == isPresent) {
+            int dailyWage = wagePerHour * fullDayHours;
+            System.out.println("Employee is Present");
+            System.out.println("Daily Wage: ₹" + dailyWage);
+        } else {
+            System.out.println("Employee is Absent. Daily Wage: ₹0");
+        }
+    }
 }
