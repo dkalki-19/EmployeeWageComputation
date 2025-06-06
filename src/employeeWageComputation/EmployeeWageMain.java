@@ -8,5 +8,8 @@ public class EmployeeWageMain {
 	        
 	        System.out.println("\nUC2: Calculate Daily Wage");
 	        emp.calculateDailyWage();
+	        
+	        System.out.println("\nUC3: Part Time Wage");
+	        empWage.calculatePartTimeWage();
 	 }
 }

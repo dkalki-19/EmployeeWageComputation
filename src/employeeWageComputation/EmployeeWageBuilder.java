@@ -26,4 +26,20 @@ public class EmployeeWageBuilder {
             System.out.println("Employee is Absent. Daily Wage: ₹0");
         }
     }
+	
+	public void calculatePartTimeWage() {
+        int wagePerHour = 20;
+        int partTimeHours = 4;
+        int empCheck = new Random().nextInt(3); // 0,1,2
+
+        if (empCheck == 1) {
+            System.out.println("Part Time Employee");
+            System.out.println("Wage: ₹" + (wagePerHour * partTimeHours));
+        } else if (empCheck == 2) {
+            System.out.println("Full Time Employee");
+            System.out.println("Wage: ₹" + (wagePerHour * 8));
+        } else {
+            System.out.println("Employee Absent. Wage: ₹0");
+        }
+    }
 }
