@@ -17,6 +17,9 @@ public class EmployeeWageMain {
 	        
 	        System.out.println("\nUC5: Monthly Wage for 20 Days");
 	        emp.calculateMonthlyWage();
+	        
+	        System.out.println("\nUC: W6&7 age Till Condition (100 hrs or 20 days)");
+	        emp.calculateWageTillCondition();
 
 	 }
 }
