@@ -87,6 +87,20 @@ public class EmployeeWageBuilder {
 
         int totalWage = totalHours * wagePerHour;
         System.out.println("Total Wage: ₹" + totalWage + " for " + totalHours + " hours in " + totalDays + " days.");
+        
+    }
+    
+    public void computeEmpWage(String company, int wagePerHour, int maxWorkingDays, int maxWorkingHours) {
+        int totalHours = 0, totalDays = 0;
+
+        while (totalHours < maxWorkingHours && totalDays < maxWorkingDays) {
+            totalDays++;
+            int empHours = getWorkingHours();
+            totalHours += empHours;
+        }
+
+        int totalWage = totalHours * wagePerHour;
+        System.out.println("Total Wage for " + company + " = ₹" + totalWage);
     }
 
 }
