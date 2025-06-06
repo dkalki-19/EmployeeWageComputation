@@ -70,5 +70,23 @@ public class EmployeeWageBuilder {
         }
         System.out.println("Total Monthly Wage: ₹" + totalWage);
     }
+    
+    public void calculateWageTillCondition() {
+        int wagePerHour = 20;
+        int maxWorkingDays = 20;
+        int maxWorkingHours = 100;
+
+        int totalHours = 0;
+        int totalDays = 0;
+
+        while (totalHours <= maxWorkingHours && totalDays < maxWorkingDays) {
+            totalDays++;
+            int empHours = getWorkingHours();
+            totalHours += empHours;
+        }
+
+        int totalWage = totalHours * wagePerHour;
+        System.out.println("Total Wage: ₹" + totalWage + " for " + totalHours + " hours in " + totalDays + " days.");
+    }
 
 }
