@@ -10,6 +10,9 @@ public class EmployeeWageMain {
 	        emp.calculateDailyWage();
 	        
 	        System.out.println("\nUC3: Part Time Wage");
-	        empWage.calculatePartTimeWage();
+	        emp.calculatePartTimeWage();
+	        
+	        System.out.println("\nUC4: Wage Calculation using Switch Case");
+	        empWage.calculateWageUsingSwitch();
 	 }
 }

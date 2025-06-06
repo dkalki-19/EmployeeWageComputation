@@ -42,4 +42,19 @@ public class EmployeeWageBuilder {
             System.out.println("Employee Absent. Wage: ₹0");
         }
     }
+	
+	public int getWorkingHours() {
+        int empCheck = new Random().nextInt(3);
+        switch (empCheck) {
+            case 1: return 4; // Part-time
+            case 2: return 8; // Full-time
+            default: return 0; // Absent
+        }
+    }
+
+    public void calculateWageUsingSwitch() {
+        int wagePerHour = 20;
+        int empHours = getWorkingHours();
+        System.out.println("Wage: ₹" + (empHours * wagePerHour));
+    }
 }
